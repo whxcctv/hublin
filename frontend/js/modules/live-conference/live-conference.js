@@ -61,11 +61,11 @@ angular.module('op.live-conference', [
 
     $scope.init = function() {
       session.initialized.then(function() {
-        $scope.process.step = 'conference';
+        //$scope.process.step = 'conference';
       });
 
       session.goodbye.then(function() {
-        $scope.process.step = 'goodbye';
+        //$scope.process.step = 'goodbye';
       });
 
       // MEET-363
