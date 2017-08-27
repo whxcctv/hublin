@@ -48,11 +48,12 @@ angular.module('meetings.configuration', ['meetings.session', 'meetings.wizard',
         configurationService.configure($scope.configuration)
          .then(onSuccess, onFailure);
       };
-
+      /*
       $scope.wizard = new Wizard([
         '/views/live-conference/partials/configuration/username.html'
       ], $scope.createConference);
-
+      */
+      $scope.createConference();
       function onSuccess() {
         $log.info('Conference has been configured');
         session.setConfigured(true);
